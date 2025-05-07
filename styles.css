@@ -156,5 +156,21 @@ footer p {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* optional rounded corners */
+    border-radius: 8px;
+    display: block;
+}
+.image-row {
+    display: flex;
+    justify-content: center;  /* centers them horizontally */
+    gap: 20px;                /* space between images */
+    flex-wrap: wrap;          /* allows wrapping on small screens */
+}
+
+.image-row img {
+    width: 45%;               /* adjust to your liking */
+    max-width: 100%;         /* optional: limits image size */
+    height: auto;
+    flex: 1;
+    object-fit: cover;
+    border-radius: 8px;       /* optional: rounded corners */
 }
