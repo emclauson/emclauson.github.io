@@ -11,6 +11,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 /* Container for center alignment */
@@ -23,10 +26,24 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(15deg, #3f43ff, hsl(302, 100%, 73%));
     color: white;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 header h1 {
@@ -84,6 +101,7 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+    margin-top: auto;
 }
 
 footer p {
@@ -104,4 +122,32 @@ footer p {
         display: block;
         margin: 10px 0;
     }
+}
+
+.main-nav {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #f4f4f4;
 }
