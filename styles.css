@@ -151,3 +151,10 @@ footer p {
 .main-nav ul li a:hover {
     color: #f4f4f4;
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* optional rounded corners */
+}
