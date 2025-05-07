@@ -161,6 +161,7 @@ img {
     height: auto;
     border-radius: 8px;
     display: block;
+    margin-top: 10px;
 }
 .image-row {
     display: flex;
