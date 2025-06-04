@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* Body and Font */
 body {
     font-family: 'Arial', sans-serif;
@@ -178,4 +180,3 @@ img {
     object-fit: cover;
     border-radius: 8px;       /* optional: rounded corners */
 }
-
